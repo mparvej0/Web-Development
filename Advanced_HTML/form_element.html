@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Elements: Radio, Checkbox, Select, Textarea</title>
 </head>
-
 <body>
-    <h1>Fitness Form</h1>
+    <h1>Fitness</h1>
     <form action="/process.php">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name here">
@@ -16,36 +14,53 @@
 
         <p>Choose your Gender</p>
         <label for="gender">Male</label>
-        <input type="radio" id="Male" name="gender" value="Male>.
+        <input type="radio" id="Male" name="gender" value="Male">
 
-        <label for=" gender">Female</label>
-        <input type="radio" id="Female" name="gender" value="Female>
+        <label for="gender">Female</label>
+        <input type="radio" id="Female" name="gender" value="Female">
 
-        <label for=" gender">Other</label>
-        <input type="radio" id="Other" name="gender" value="Other>
+        <label for="gender">Other</label>
+        <input type="radio" id="Other" name="gender" value="Other">
         <br></br>
-           
-        
-<p>Choose your Gender</p>
-        
-        <label for=" Phone">Phone</label>
+
+        <label for="Phone">Phone</label>
         <input type="tel" id="Phone" name="Phone" placeholder="Your Phone">
         <br></br>
-    
 
-                   <p>Choose your Gender</p>
+        <p>Choose your hobby</p>
+        <label for="playing">Playing</label>
+        <input type="checkbox" name="playing" id="playing" value="playing">
+
+        <label for="singing">Singing</label>
+        <input type="checkbox" name="singing" id="singing" value="singing">
+
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" name="dancing" id="dancing" value="dancing">
+        <br></br>
+
+        <label for="city">Choose a ciy</label>
+        <select id="city" name="city">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore">Bangalore</option>
+        </select>
+        <br></br>
+
         <label for="pass">Password</label>
-        <input type="password" id="pass" name="password" placeholder="Your password">
+        <input type="password" id="pass" name="password" placeholder="Your Password">
         <br></br>
 
-        <label for="cpass">Confirm Password</label>
-        <input type="password" name="confirmpassword" id="cpass" placeholder="Your Confirm password">
+        <label for="cpass">confirm Password</label>
+        <input type="password" name="confirmpassword" id="cpass" placeholder="Your Confirm Password">
         <br></br>
 
-
+        <label for="message">Your Message:</label>
+        <textarea name="description" rows="7" cols="144" id="description"></textarea>
+        <br></br>
 
         <input type="submit" value="Submit">
+
+
     </form>
 </body>
-
 </html>
